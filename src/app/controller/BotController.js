@@ -8,6 +8,8 @@ module.exports = class BotController {
     try {
       const { msg } = req.query;
 
+      console.log('started');
+
       const token = process.env.TOKEN;
       const chaId = process.env.CHAT_ID;
 

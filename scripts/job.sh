@@ -1,9 +1,6 @@
 ## Init Loop
 while :; do
-    echo "Opening Chrome!"
-    google-chrome-stable --no-sandbox  --new-window --start-minimized 'https://www.bet365.com/#/AS/B83/' &
-    sleep 30
-    echo "Closing Chrome!"
-    kill -9 $(pgrep -d' ' -f chrome) &
+    echo "Sending message!"
+    curl -G "http://localhost:3333/job" --data-urlencode "msg=This is a test for Mohil!!! 🤝"
     sleep 30
 done

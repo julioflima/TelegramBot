@@ -14,9 +14,7 @@ module.exports = class Routes {
   }
 
   map() {
-    this.routes.post('/job', BotController.job);
-    this.routes.get('/status', BotController.status);
-
     this.routes.get('/job', BotController.job);
+    this.routes.get('/status', BotController.status);
   }
 };

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node src/server.js",
-    "nodemon": "clear && nodemon src/server.js",
+    "dev": "clear && nodemon src/server.js",
     "serve": "pm2 kill && pm2 start src/server.js && pm2 monit",
     "production": "pm2 kill && node src/server.js"
   },
