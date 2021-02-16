@@ -19,7 +19,7 @@ node_modules/
 # Personal
 ./archive/*
 
-.env
+**/.env
 
 # Yarn
 **/yarn.lock
